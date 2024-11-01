@@ -1,0 +1,152 @@
+.header {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  background-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.3) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  z-index: 5;
+
+  @include media(desktop) {
+    height: 70px;
+    padding: 0;
+  }
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media(desktop) {
+    width: 1200px;
+    padding: 0 80px;
+    margin: 0 auto;
+  }
+}
+.header-logo {
+  width: 40px;
+  height: 40px;
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.header-btn {
+  border: none;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.header-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 414px;
+  width: 150px;
+  padding: 13px 16px;
+  background-image: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  border-bottom-right-radius: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 9;
+
+  @include media(desktop) {
+    position: static;
+    transform: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    height: auto;
+    width: auto;
+    background: transparent;
+    padding: 0;
+  }
+}
+
+.header-menu-open {
+  transform: translateX(0);
+}
+
+.close-menu-btn {
+  margin-bottom: 26px;
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.open-icon {
+  width: 18px;
+  height: 15px;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  letter-spacing: 0.05em;
+  padding-left: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.header-nav-item {
+  color: $_nav_color;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.header-nav-item:hover,
+.header-nav-item:focus {
+  color: $_nav_color_hover;
+}
+
+.header-nav-item-active {
+  color: $_nav_color_hover;
+
+  @include media(desktop) {
+    background-color: #131313;
+    border-radius: 10px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.menu-open {
+  overflow: hidden;
+}

@@ -1,10 +1,10 @@
 {
-  "name": "vanilla-vite-template",
+  "name": "delish_match",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build --base=/vanilla-vite-template/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
@@ -12,7 +12,7 @@
     "deploy": "netlify deploy -p"
   },
   "devDependencies": {
-    "glob": "^8.1.0",
+    "glob": "^9.1.0",
     "netlify-cli": "^17.30.0",
     "sass": "^1.77.6",
     "sharp": "^0.33.4",
@@ -20,7 +20,7 @@
     "vite": "^4.5.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
+  "author": "Mykola Dodiak <mykola.Dodiak@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",

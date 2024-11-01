@@ -1,0 +1,10 @@
+.container {
+  width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding: 0 80px;
+  }
+}

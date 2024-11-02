@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.img-footer {
+  max-width: 37px;
+  max-height: 33px;
+}
+.rights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 550;
+  font-size: 13px;
+  color: #fff;
+  padding-bottom: 24px;
+}
+
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+.nav-link {
+}
+.privacySlash {
+}

@@ -4,14 +4,22 @@
   margin: 0 auto;
 
   @include media(desktop) {
-    max-width: 1200px;
+    width: 1200px;
     padding: 0 80px;
   }
 }
 
 .title-container {
+  display: flex;
+  justify-content: center;
   position: relative;
+  // margin-bottom: 22px;
+}
+
+.title,
+.titleStroke {
   display: inline-block;
+  position: relative;
 }
 
 .title {
@@ -23,7 +31,6 @@
   position: relative;
   z-index: 1;
   white-space: nowrap;
-  margin-bottom: 22px;
 
   @include media(desktop) {
     font-size: 72px;
@@ -39,11 +46,76 @@
   color: transparent;
   -webkit-text-stroke: 1px #3b1f1f;
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
+  transform: translateX(-50%);
   pointer-events: none;
   white-space: nowrap;
   @include media(desktop) {
     font-size: 72px;
   }
+}
+
+.google-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+  border: 1px solid $_main_color;
+  border-radius: 7px;
+  background-color: $_white_accent_color;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  @include media(desktop) {
+    padding: 9px 16px;
+    width: 156px;
+    height: 52px;
+  }
+}
+
+.icon-play-store {
+  width: 24px;
+  height: 24px;
+  @include media(desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.text-svg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3px;
+}
+
+.icon-get-it-on {
+  width: 50px;
+  height: 12px;
+  @include media(desktop) {
+    width: 61px;
+    height: 12px;
+  }
+}
+.icon-google-play {
+  width: 74px;
+  height: 15px;
+  @include media(desktop) {
+    width: 89px;
+    height: 18px;
+  }
+}
+
+.google-link:hover .google-button,
+.google-link:focus .google-button {
+  background-color: $_main_color;
+  box-shadow: 0 4px 4px 0 rgba(238, 209, 77, 0.25),
+    inset 0 4px 4px 0 rgba(238, 209, 77, 0.25);
+}
+
+.google-link:hover .text-svg-container svg,
+.google-link:focus .text-svg-container svg {
+  fill: $_white_accent_color;
 }

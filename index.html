@@ -13,7 +13,7 @@
     />
     
     <script type="module" crossorigin src="/Delish_Match/commonHelpers3.js"></script>
-    <link rel="stylesheet" href="/Delish_Match/assets/index-934d0b9e.css">
+    <link rel="stylesheet" href="/Delish_Match/assets/index-3dc266d4.css">
   </head>
 
   <body>
@@ -155,15 +155,58 @@
       <span class="titleStroke">Description</span>
       <h2 class="title">Description</h2>
     </div>
-    <p class="description-text">
-      Delish Match : Match3 & Design is a fun culinary simulator that lets
-      players become the head chef of their own restaurant. Manage the kitchen,
-      create amazing dishes, serve customers, and grow your restaurant. Every
-      dish presents a new challenge, and satisfied customers will return again
-      and again. As you progress, unlock new ingredients, recipes, and equipment
-      to make your restaurant the best in town. Delish Match : Match3 & Design
-      offers many levels with unique challenges and culinary adventures!
-    </p>
+    <div class="description-text-wrapper">
+      <p class="description-text">
+        Delish Match : Match3 & Design is a fun culinary simulator that lets
+        players become the head chef of their own restaurant. Manage the
+        kitchen, create amazing dishes, serve customers, and grow your
+        restaurant. Every dish presents a new challenge, and satisfied customers
+        will return again and again. As you progress, unlock new ingredients,
+        recipes, and equipment to make your restaurant the best in town. Delish
+        Match : Match3 & Design offers many levels with unique challenges and
+        culinary adventures!
+      </p>
+      <picture>
+        <source
+          srcset="/Delish_Match/assets/cat_@1x-941f1b7d.webp 1x, /Delish_Match/assets/cat_@2x-d23c0759.webp 2x"
+          type="image/webp"
+        />
+        <img
+          src="./img/bg-images/cat_@1x.webp 1x"
+          alt="cat"
+          width="115"
+          height="105"
+          class="desc-cat-image"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/Delish_Match/assets/stats_@1x-083b4337.webp 1x, /Delish_Match/assets/stats_@2x-47037c71.webp 2x"
+          type="image/webp"
+        />
+        <img
+          src="./img/bg-images/stats_@1x.webp 1x"
+          alt="stats"
+          width="154"
+          height="89"
+          class="desc-stats-image"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/Delish_Match/assets/green_@1x-d92beb0f.webp 1x, /Delish_Match/assets/green_@2x-fdb5c3ad.webp 2x"
+          type="image/webp"
+        />
+        <img
+          src="../img/bg-images/green_@1x.webp 1x"
+          alt="green match"
+          class="desc-green-image"
+          loading="lazy"
+        />
+      </picture>
+    </div>
     <picture>
       <source
         media="(min-width: 1200px)"
@@ -180,7 +223,21 @@
         alt="description image"
         width="288"
         height="160"
-        class="delish-match-img"
+        class="description-img"
+        loading="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="data:image/webp;base64,UklGRloLAABXRUJQVlA4WAoAAAAQAAAAaQAAaQAAQUxQSDMDAAABoChJtmnbGmvd43Nt27Zt27Zt69m2zf1s27Z1bXvPMZ577bn6AyJiAoRqWHXRQ9+/saGWsC815uY99q+nWhMLina8/Ff7v+/lIZXRYs4r+wzUfowyRid+P2ERPkcmKNHmgk+TFvH+EkSKDLn6+8OWQm1NImh1zktb1FKrZxMIy7Zb+Zv5+HL8ujx71Dw9ViRmxR9y5q1OjklWgwlrF0yc+oAznx+OQdBw/tVfqcXwy8Cz3B6XfnrEYrq9lD9h8far33IWY13oSVh11kP7LO6P+5DZ5ZYPjhrBLflTExTtfO4Dh4xkslIK0puvvn+LMW0TVbnlz25JGtmZUeS0nv+qMX4qgrIJI/0rVuQLY63toVuM97XQbmLfQb8S0yrIjcRsCdKD2QtIpdPETlcC0t8hZqsAOZfZs8iAJLETaUDGFmLWCZD7mW1GxjB7CSnB7HQWII6YdkPeZrYIGcFsI1LiIC/bhARPEtuAyBpi50PNiW0rgBQ7xMtWI/IxsdP1kBuI2YVIB2ZbkWALMS0EyOXEbBgygtmLSD1mx8sCxQ4S0wVA+DIxezH7/8lmZscaAOWPE0sOBoK3ielmQK4kZq8g3ZidyAIyDhFzXQG5gZjegwwiZp8ghX8jtiULkNFneLl6SHAfL52NSH1edi9UgNiOUkhjYloL6UjMRiDNmCWQLGYnsgA5QEwHIfcSs3uQEcy+yQDCY8TO9ATkTWK6GrmWmD0SAh0dsQMlgKyfiekIQG4hZtcjC5h9iFRn9hUSbCeWQOQ6YkOhXrw+zILCw6T06bKCP0FJf1xaQCIcyEbdH1/c0CKPRFopyURP/3HnoHyhRJ2zi4XuSlwxrGIRSenLDPTHR2cUFw+Xxs4denZMjvjZ8lic1H09v0WZUHwNv4mL2/3dY8uqh+L1/XFQ98N1o4oE4v0yv16ZMnnGtFHNKuZILMv6dGhNIPHe7ou6RFeJ+10+qJ55enSNUGI/IGVu37MLywrH8mdSoO7kz9dNqSQ0g0+jcu+cPX1ApVCoro9CT721sYIQbnwKULfngaWtQuH80v/SHy/vm194Nz35b3rypfOaCvnqaz759ZX1/VqmC1MAVlA4IAAIAADQJwCdASpqAGoAPmEojkWkIqEazRd8QAYEtABl7Bpjzk22R/Ff1j9UckQbyHD5g36if6rrDeZf9sN8A/0PUq9Cx6w/7dekBg2XGT9v9M3dPipjjrndoFBAK7/CbslsQxZ/FwYxR+y+wr7EsRTU3wEv7JCbgKyPPThJ/UMivt0m1+8pjo96oMXl+T9Vg84juPNosivOtQ0nW6vJGccby/VhS+UJHWk/Z03/izcxSVv3N9WkBSWuNB5LQOIR56QJ7F3b4xJNHqVWPcYfhf9usVIgebmEdHIzvtwUzGN7mmwxj4DSuixYMR7Iwo2/2aEzhSsxBJlIn2G8nrRyWSPqAtnjcly+QwOopfYD5c8u+uB5BgMbF3gSw+gfhVwivjmYs35Q/cSXeS7KQMe/wjyqLB6H4oz0XfP+/ar0sP1AtaQVQCmOtmZhEAAA/v4G59aP1L//6AQf/3SsCcrXhbQOyIH97/k2qJfbdkadJL4L9lifjgCzvpswHNEBm4WuCraGS3/Ovm4mQYp8RGYcZv+BS3//IQPorOUrAzRv9N9SVLc86TUMIGOkLUjDpZLt8GU6dzdfIYPVOXIPnariapqs8W6MCiwg0QNYJ5kDmR56EQM6EsKDRj8gfj/t+MpEAy2p1JMWI0XBfYDh4ycI0fyqo6IGDKMDk2hw/Ws0WSXs6m9AmWrySIb16cj5zcpU91ky7RN//ulC8fCR/3ahFoRJe0+xLm50DyKAaO5lLRtgVcTZbXKO1NLvqHkD5c45t0atgKdEKexmR50uzpQ9HpBUnPfc4oiERBq9e6wUOl76l5Oy+Wwl0h5as01KeVUQNFzPhjnTWYG44jUMQE005VuASdCTtf5s9fG1/oh/+fRV2ofm8DaI79bfTp9NXaEfUk1g3db9BcFliPRHa/n79Ox2qPqhEjpOlKgwMYSAGwmlZhl80XwvwblpcX5poO8OQ7El2H1Ugm/F7ucJ3ffHErWYxXuH9nGuARzLYsYlCYifPVul68GjAX6mxq2m2S4pwHQ+d2XF4muDLMafE6DnMX0ED9QGmjb8zCxFtOBt5Qc76ioe4DLHjMg7g/wHqFLmAQXnCcNCIPQvnn6gXNycZVJwg/vO1ZwGBHGAfakXyyqi8GuBgu4HKhdR1UiDhpWPBgw/6ouN6ZejLP1Vn5ZlIUMZVAYvM8sX+Mu2v0pFqc5DPLYo94nktOxgX3fgHmM49J/tA59+3k3d6UgQsj/CEbRjs6hJbSkVqjH/HcPTg7QsgXOO6a+/3QedmCpoB1RhS9asLW5K6/1BKwuZVi6fjtIAbpvTKCPvRDxsGVXNw7LZVKGADEASQyQ47kUB9cmx1lGzAMqq2pmJDZN6e1VJWJZqrXboMVaxI3r6PegNU4xsWTBHmGmG9s7v4JIP/2fUX2TCkZt2uHxmaVUNjlPWjf4IMqlM8mCNOsoa38Uok/+aqRyuIoAFLiJXfB9BG4T543+//2cmbL73Q5uOZEm57fvQAZWxTN/qO3tu7ytjEWgtbsncTQ8h5mAGJVFwUmToGqRZOZrxEyvjb0EOLF65raYwgXKp/BfGTsIMjHKa33zdlMAEymVnwRsF80gioZI3/fcjGilND34iMP3svJMIDoPm4VQLHxLn91r+6A8sWvYr6bb4jypR7sR0DiBReY+msp59YiF11LwYR1nEuVra0QhS9tiXd9B0+9NIhNLr4satqLeAerRAAsb8ER/XD6F4Ox41TdXkMSwsIM5aN5eRgZvPwhRlbgecwwILxPubP/JZDUKO9vVDP0QWbkZ35cDtJ9i1fbJXiloMsVAEuxetbHbIPkpQb/gllUiZ2FFgZS1C9TnJWlljTCXAOjS9t9eU+U3luN/7/KlAkb2laAPaP+L7XnJKHsfmBKCuTyZGsqKEvI6Wbwlv0MudAGefld4T7HQthPPbRp0XhVTZPS2eEEZdBpNUAPy+QZJpvmsZP6+JJQABv9ecQTwv6ux2/tIhltrAlJ0c6g91FEu/Cs822K+c6DcaW8CBUAYXx8ByLCGIXANe4/+RMjy7FbOUqqu0j37/XstohaZFmKAr0NbFMuusFIhXxdaOc8J7DYHg58gnZAn2Zv+s/Mem1FsQtapy0j1yGcRCs3spbMBOvqrLrsuN7MOxSd/dmVdUVtUl6vW564QQ/weUJxihhJTb/wtxf7da0dS+FgjGdGz+e6FlK3nrtN5Hyw/AvJPdEoW520O1dEF0VxfNx4uQJsDTr8ajhLDlp//EL8mj1ACLwNgdXw6G61KuqJDqCPvMEHpNaO9fMXVyQwAIe3KJvabH+UL/j3Po4UkipPM1ugcwtS9+XKWuSFb6ACS4/OHlwUjgN6qSFiETqpYEELlHbqtmOoIon+zes/egOTXLSU8cRjj4cnfjR9VRteHu3IbGk47rq9aEGlmDLDdz0q5YsZCLnNwIAZP0eGWBKQtmxNnifkaoAwUaxG09loG8AbNMZYty3MWeN7QZGqIGUvmO1tzy3jo/K3rTrtC31wBdKVmyyN7z3bA33vZXQYfjWsUvr/8TLJtAgUV23G2nl2Au94s2Ko5WFgDMpLcnP/OrAbLFKUOSDQzJrqC3/V/ohNb5KVHz1Eks8IowbfWZGsc8lXnGehvZIx95c2rYp5Qr4CwIG/hv2ULqYQtKGxPDsEdZftt82UoI8nF/HN+7U7lNysZSgKC9w0a5pT0IFu/9Ark9nHHrwOgImYdlesnRD/5p8gsfBO64AAAAAA== 1x, /Delish_Match/assets/red_@2x-972e3b9e.webp 2x"
+        type="image/webp"
+      />
+      <img
+        src="./img/bg-images/red_@1x.webp 1x"
+        alt="red match"
+        width="106"
+        height="106"
+        class="desc-red-image"
         loading="lazy"
       />
     </picture>

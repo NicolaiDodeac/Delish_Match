@@ -13,7 +13,9 @@
     />
     
     <script type="module" crossorigin src="/Delish_Match/commonHelpers3.js"></script>
-    <link rel="stylesheet" href="/Delish_Match/assets/index-3dc266d4.css">
+    <link rel="modulepreload" crossorigin href="/Delish_Match/assets/vendor-3f890e17.js">
+    <link rel="stylesheet" href="/Delish_Match/assets/vendor-4e87ff37.css">
+    <link rel="stylesheet" href="/Delish_Match/assets/index-7eac8bad.css">
   </head>
 
   <body>
@@ -271,38 +273,100 @@
   </div>
 </section>
 
-      <section id="faq">
+      <section id="faq" class="faq">
   <div class="container">
-    <div class="title-container">
+    <div class="title-container faq-title">
       <span class="titleStroke">Frequently Asked Questions</span>
       <h2 class="title">Frequently Asked Questions</h2>
     </div>
-  </div>
-</section>
+    <div class="faqPictures">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="
+      ../img/bg-images/FAQ_desc_@1x.webp 1x,
+      ../img/bg-images/FAQ_desc_@2x.webp 2x" type="image/png" />
 
-      <section id="gallery">
-  <div class="container">
-    <div class="title-container">
-      <span class="titleStroke">Gallery</span>
-      <h2 class="title">Gallery</h2>
+        <source media="(max-width: 1199px)" srcset="
+      ../img/bg-images/FAQ_desc_@1x.webp 1x,
+      ../img/bg-images/FAQ_desc_@2x.webp 2x" type="image/png" />
+        <img src="../img/bg-images/FAQ_desc_@1x.webp" alt="lady in glasses" class="faqLadyImg" loading="lazy" />
+      </picture>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="
+      ../img/bg-images/blue_desc_@1x.webp 1x,
+      ../img/bg-images/blue_desc_@1x.webp 2x" type="image/png" />
+
+        <source media="(max-width: 1199px)" srcset="
+      ../img/bg-images/blue_desc_@1x.webp 1x,
+      ../img/bg-images/blue_desc_@1x.webp 2x" type="image/png" />
+        <img src="../img/bg-images/blue_desc_@1x.webp" alt="lady in glasses" class="faqBlueImg" loading="lazy" />
+      </picture>
+    </div>
+    <div class="faq-wrapper">
+      <ul class="accordion-container faq-list" id="accordion-container"></ul>
     </div>
   </div>
 </section>
+      <section id="gallery" class="section-gallery">
+  <div class="container gallery-container">
+    <div class="title-container gallery-title">
+      <span class="titleStroke">Gallery</span>
+      <h2 class="title titleGal">Gallery</h2>
+    </div>
 
+    <div class="background-stripe"></div>
+    <div class="swiper gallery-swiper">
+      <ul class="gallery-list swiper-wrapper"></ul>
+      <div class="background-stripe"></div>
+      <div class="swiperArrows">
+        <div class="gallery-swiper-button-prev gallery-btnl-border">
+          <svg class="gallery-icon gallery-icon-prev" width="24" height="24">
+            <use href="../img/icons.svg#icon-left-arrow"></use>
+          </svg>
+        </div>
+        <div class="gallery-swiper-button-next gallery-btnr-border">
+          <svg class="gallery-icon gallery-icon-next" width="24" height="24">
+            <use href="../img/icons.svg#icon-right-arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.playdogsoft.tastyville&pli=1"
+      aria-label="Go to Google Play" target="_blank" class="google-link btnPosition">
+      <div class="google-button">
+        <svg class="icon-play-store" width="24" height="24">
+          <use href="/Delish_Match/assets/icons-31560ddc.svg#icon-play-store"></use>
+        </svg>
+        <div class="text-svg-container">
+          <svg width="50" height="12" class="icon-get-it-on">
+            <use href="/Delish_Match/assets/icons-31560ddc.svg#icon-GET-IT-ON"></use>
+          </svg>
+          <svg width="74" height="15" class="icon-google-play">
+            <use href="/Delish_Match/assets/icons-31560ddc.svg#icon-google-play"></use>
+          </svg>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
     </main>
-    <footer>
+    <footer class="footer">
   <div class="container">
     <nav class="nav">
-      <img class="logoFooter" src="../img/" alt="dog" />
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="./privacy-policy.html" class="nav-link">Privacy Policy <span class="privacySlash">/</span></a>
-        </li>
+      <div class="footerWrapper">
+        <img class="img-footer" srcset="/Delish_Match/assets/delish_match_desc_@1x-56361b97.webp 1x, /Delish_Match/assets/delish_match_desc_@2x-9e117120.webp 2x" src="/Delish_Match/assets/delish_match_desc_@1x-56361b97.webp" alt="delish match logo" width="98" height="88" loading="lazy" />
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./privacy-policy.html" class="nav-link">Privacy Policy<span class="privacySlash">/</span></a>
+          </li>
 
-        <li class="nav-item">
-          <a href="./terms-of-service.html" class="nav-link">Terms of Service</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a href="./terms-of-service.html" class="nav-link">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+      <div class="rights-wrapper">
+        <h3 class="rights">All rights reserved luckycoolstart.com | 2024</h3>
+      </div>
     </nav>
   </div>
 </footer>

@@ -1,0 +1,49 @@
+.container {
+  width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding: 0 80px;
+  }
+}
+
+.title-container {
+  position: relative;
+  display: inline-block;
+}
+
+.title {
+  font-family: $_secondary_font_family;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: $_titles_color;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  margin-bottom: 22px;
+
+  @include media(desktop) {
+    font-size: 72px;
+    text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 48px;
+  }
+}
+
+.titleStroke {
+  font-family: $_secondary_font_family;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: transparent;
+  -webkit-text-stroke: 1px #3b1f1f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  @include media(desktop) {
+    font-size: 72px;
+  }
+}

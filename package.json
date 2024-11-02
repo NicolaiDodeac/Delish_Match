@@ -23,6 +23,9 @@
   "author": "Mykola Dodiak <mykola.Dodiak@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion": "^3.0.2",
+    "accordion-js": "^3.3.4",
+    "swiper": "^11.1.14",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

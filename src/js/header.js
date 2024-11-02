@@ -12,12 +12,14 @@ const openMenu = () => {
   refs.menu.classList.add('header-menu-open');
   document.body.classList.add('menu-open');
   document.addEventListener('click', handleOutsideClick);
+  document.addEventListener('keydown', handleKeyDown);
 };
 
 const closeMenu = () => {
   refs.menu.classList.remove('header-menu-open');
   document.body.classList.remove('menu-open');
   document.removeEventListener('click', handleOutsideClick);
+  document.removeEventListener('keydown', handleKeyDown);
 };
 
 const handleOutsideClick = event => {
@@ -25,6 +27,12 @@ const handleOutsideClick = event => {
     refs.menu.contains(event.target) || refs.openMenuBtn.contains(event.target);
 
   if (!isClickInsideMenu) {
+    closeMenu();
+  }
+};
+
+const handleKeyDown = event => {
+  if (event.key === 'Escape') {
     closeMenu();
   }
 };

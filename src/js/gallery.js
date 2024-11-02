@@ -55,7 +55,7 @@ function renderGallery(images) {
         />
 
         <source
-          media="(max-width: 1199.98px)"
+          media="(max-width: 1199px)"
            srcset="${img.imgMob1} 1x,${img.imgMob2} 2x"
           type="image/png"
         />

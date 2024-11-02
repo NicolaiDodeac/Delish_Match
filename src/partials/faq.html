@@ -1,9 +1,33 @@
-<section id="faq">
+<section id="faq" class="faq">
   <div class="container">
-    <div class="title-container">
+    <div class="title-container faq-title">
       <span class="titleStroke">Frequently Asked Questions</span>
       <h2 class="title">Frequently Asked Questions</h2>
     </div>
-    <ul class="accordion-container faq-list" id="accordion-container"></ul>
+    <div class="faqPictures">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="
+      ../img/bg-images/FAQ_desc_@1x.webp 1x,
+      ../img/bg-images/FAQ_desc_@2x.webp 2x" type="image/png" />
+
+        <source media="(max-width: 1199px)" srcset="
+      ../img/bg-images/FAQ_desc_@1x.webp 1x,
+      ../img/bg-images/FAQ_desc_@2x.webp 2x" type="image/png" />
+        <img src="../img/bg-images/FAQ_desc_@1x.webp" alt="lady in glasses" class="faqLadyImg" loading="lazy" />
+      </picture>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="
+      ../img/bg-images/blue_desc_@1x.webp 1x,
+      ../img/bg-images/blue_desc_@1x.webp 2x" type="image/png" />
+
+        <source media="(max-width: 1199px)" srcset="
+      ../img/bg-images/blue_desc_@1x.webp 1x,
+      ../img/bg-images/blue_desc_@1x.webp 2x" type="image/png" />
+        <img src="../img/bg-images/blue_desc_@1x.webp" alt="lady in glasses" class="faqBlueImg" loading="lazy" />
+      </picture>
+    </div>
+    <div class="faq-wrapper">
+      <ul class="accordion-container faq-list" id="accordion-container"></ul>
+    </div>
   </div>
 </section>

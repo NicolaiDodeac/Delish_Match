@@ -1,0 +1,91 @@
+.faq-title {
+  margin-bottom: 100px;
+}
+
+.faqPictures {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faqLadyImg {
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+  top: -165%;
+  left: -10%;
+  width: 150px;
+  height: 180px;
+  transform: scaleX(-1);
+  z-index: 0;
+}
+.faqBlueImg {
+  width: 53px;
+  height: 64px;
+  margin-right: 20px;
+}
+
+.faq-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: $_text_bg_color;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: $_main_color;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    padding: 24px;
+  }
+}
+
+.ac .ac-trigger::after {
+  background-color: $_nav_color;
+  transition: $_transition;
+  text-align: center;
+  border-radius: 50%;
+  width: 25px !important;
+  @include media(desktop) {
+    width: 40px !important;
+  }
+}
+
+.ac.ac-trigger::after:hover,
+.ac.ac-trigger::after:focus {
+  background-color: $_nav_color;
+  transition: $_transition;
+}
+
+.faq-list .ac-header .ac-trigger {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #000;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+.faq-list .ac-header .ac-trigger:hover {
+  color: $_nav_color_hover;
+  transition: $_transition;
+}
+
+.ac .ac-panel .ac-text {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0.02em !important;
+  color: #000 !important;
+  @include media(desktop) {
+    font-size: 24px !important;
+  }
+}
+
+.ac {
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+  margin-top: 0px;
+  border: 0px solid #eee !important;
+  background-color: transparent !important;
+}

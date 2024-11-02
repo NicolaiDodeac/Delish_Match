@@ -1,5 +1,6 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+import svg from '../img/icons.svg';
 
 const refs = {
   listEl: document.querySelector('.faq-list'),
@@ -41,7 +42,6 @@ function markupFAQ({ title, text }) {
         <h3 class="ac-header">
           <button type="button" class="ac-trigger">
             ${title}
-            
           </button>
         </h3>
         <div class="ac-panel">

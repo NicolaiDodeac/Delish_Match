@@ -1,1 +1,71 @@
-<section id="hero"><div class="container"></div></section>
+<section id="hero" class="hero">
+  <div class="container hero-container">
+    <div class="hero-content-wrapper">
+      <div class="img-container">
+        <picture>
+          <source
+            srcset="
+              ./img/hero/stars_desc_@1x.webp 1x,
+              ./img/hero/stars_desc_@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            src="./img/hero/stars_desc_@1x.webp 1x"
+            alt="logo"
+            width="241"
+            height="109"
+            class="stars"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./img/hero/delish_match_desc_@1x.webp 1x,
+              ./img/hero/delish_match_desc_@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1199px)"
+            srcset="
+              ./img/hero/delish_match_mob_@1x.webp 1x,
+              ./img/hero/delish_match_mob_@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            src="./img/hero/delish_match_mob_@1x.webp"
+            alt="delish match"
+            width="196"
+            height="176"
+            class="delish-match-img"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.playdogsoft.tastyville&pli=1"
+        aria-label="Go to Google Play"
+        target="_blank"
+        class="google-link"
+      >
+        <div class="google-button">
+          <svg class="icon-play-store" width="24" height="24">
+            <use href="./img/icons.svg#icon-play-store"></use>
+          </svg>
+          <div class="text-svg-container">
+            <svg width="50" height="12" class="icon-get-it-on">
+              <use href="./img/icons.svg#icon-GET-IT-ON"></use>
+            </svg>
+            <svg width="74" height="15" class="icon-google-play">
+              <use href="./img/icons.svg#icon-google-play"></use>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+.description-section {
+  height: 100vh;
+  width: 100%;
+  padding-top: 39px;
+  background-image: url('/img/bg-images/border_desc_@1x.webp');
+  background-size: auto 15px;
+  background-position: left top;
+  background-repeat: repeat-x;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    background-image: url('/img/bg-images/border_desc_@1x.webp');
+    background-size: auto 30px;
+    background-position: left top;
+    background-repeat: repeat-x;
+  }
+}
+
+.desc-title-container {
+  margin-bottom: 90px;
+}
+
+.description-text {
+  max-width: 288px;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 83px;
+  background: $_text_bg_color;
+}

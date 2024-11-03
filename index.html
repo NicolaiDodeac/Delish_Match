@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/Delish_Match/commonHelpers3.js"></script>
     <link rel="modulepreload" crossorigin href="/Delish_Match/assets/vendor-a6504e5c.js">
     <link rel="stylesheet" href="/Delish_Match/assets/vendor-4e87ff37.css">
-    <link rel="stylesheet" href="/Delish_Match/assets/index-32fe9ed0.css">
+    <link rel="stylesheet" href="/Delish_Match/assets/index-fb6fb2ee.css">
   </head>
 
   <body>
@@ -27,7 +27,7 @@
       type="button"
     >
       <svg width="18" height="15" stroke="#EED14D">
-        <use href="/Delish_Match/assets/icons-e5943373.svg#icon-burger"></use>
+        <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-burger"></use>
       </svg>
     </button>
 
@@ -55,7 +55,7 @@
       type="button"
     >
       <svg width="24" height="24" stroke="#EED14D" class="close-icon">
-        <use href="/Delish_Match/assets/icons-e5943373.svg#icon-close"></use>
+        <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-close"></use>
       </svg>
     </button>
       <nav class="header-nav">
@@ -135,14 +135,14 @@
       >
         <div class="google-button">
           <svg class="icon-play-store" width="24" height="24">
-            <use href="/Delish_Match/assets/icons-e5943373.svg#icon-play-store"></use>
+            <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-play-store"></use>
           </svg>
           <div class="text-svg-container">
             <svg width="50" height="12" class="icon-get-it-on">
-              <use href="/Delish_Match/assets/icons-e5943373.svg#icon-GET-IT-ON"></use>
+              <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-GET-IT-ON"></use>
             </svg>
             <svg width="74" height="15" class="icon-google-play">
-              <use href="/Delish_Match/assets/icons-e5943373.svg#icon-google-play"></use>
+              <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-google-play"></use>
             </svg>
           </div>
         </div>
@@ -257,13 +257,13 @@
     </div>
     <div class="swiper-btn">
       <div class="reviews-swiper-button-prev btn-prev">
-        <svg class="reviews-swiper-icon">
-          <use href="/Delish_Match/assets/icons-e5943373.svg#icon-left-arrow"></use>
+        <svg class="swiper-icon">
+          <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-left-arrow"></use>
         </svg>
       </div>
       <div class="reviews-swiper-button-next btn-next">
-        <svg class="reviews-swiper-icon">
-          <use href="/Delish_Match/assets/icons-e5943373.svg#icon-left-arrow"></use>
+        <svg class="swiper-icon">
+          <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-left-arrow"></use>
         </svg>
       </div>
     </div>
@@ -296,24 +296,54 @@
     </div>
     <div class="faqPictures">
       <picture>
-        <source media="(min-width: 1200px)" srcset="
-      ../img/bg-images/FAQ_desc_@1x.webp 1x,
-      ../img/bg-images/FAQ_desc_@2x.webp 2x" type="image/png" />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../img/bg-images/FAQ_desc_@1x.webp 1x,
+            ../img/bg-images/FAQ_desc_@2x.webp 2x
+          "
+          type="image/png"
+        />
 
-        <source media="(max-width: 1199px)" srcset="
-      ../img/bg-images/FAQ_desc_@1x.webp 1x,
-      ../img/bg-images/FAQ_desc_@2x.webp 2x" type="image/png" />
-        <img src="../img/bg-images/FAQ_desc_@1x.webp" alt="lady in glasses" class="faqLadyImg" loading="lazy" />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            ../img/bg-images/FAQ_desc_@1x.webp 1x,
+            ../img/bg-images/FAQ_desc_@2x.webp 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="../img/bg-images/FAQ_desc_@1x.webp"
+          alt="lady in glasses"
+          class="faqLadyImg"
+          loading="lazy"
+        />
       </picture>
       <picture>
-        <source media="(min-width: 1200px)" srcset="
-      ../img/bg-images/blue_desc_@1x.webp 1x,
-      ../img/bg-images/blue_desc_@1x.webp 2x" type="image/png" />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../img/bg-images/blue_@1x.webp 1x,
+            ../img/bg-images/blue_@1x.webp 2x
+          "
+          type="image/png"
+        />
 
-        <source media="(max-width: 1199px)" srcset="
-      ../img/bg-images/blue_desc_@1x.webp 1x,
-      ../img/bg-images/blue_desc_@1x.webp 2x" type="image/png" />
-        <img src="../img/bg-images/blue_desc_@1x.webp" alt="lady in glasses" class="faqBlueImg" loading="lazy" />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            ../img/bg-images/blue_@1x.webp 1x,
+            ../img/bg-images/blue_@1x.webp 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="../img/bg-images/blue_@1x.webp"
+          alt="lady in glasses"
+          class="faqBlueImg"
+          loading="lazy"
+        />
       </picture>
     </div>
     <div class="faq-wrapper">
@@ -321,6 +351,7 @@
     </div>
   </div>
 </section>
+
       <section id="gallery" class="section-gallery">
   <div class="container gallery-container">
     <div class="title-container gallery-title">
@@ -335,34 +366,39 @@
       <div class="swiperArrows">
         <div class="gallery-swiper-button-prev gallery-btnl-border">
           <svg class="gallery-icon gallery-icon-prev" width="24" height="24">
-            <use href="../img/icons.svg#icon-left-arrow"></use>
+            <use href="../img/sprite.svg#icon-left-arrow"></use>
           </svg>
         </div>
         <div class="gallery-swiper-button-next gallery-btnr-border">
           <svg class="gallery-icon gallery-icon-next" width="24" height="24">
-            <use href="../img/icons.svg#icon-right-arrow"></use>
+            <use href="../img/sprite.svg#icon-right-arrow"></use>
           </svg>
         </div>
       </div>
     </div>
-    <a href="https://play.google.com/store/apps/details?id=com.playdogsoft.tastyville&pli=1"
-      aria-label="Go to Google Play" target="_blank" class="google-link btnPosition">
+    <a
+      href="https://play.google.com/store/apps/details?id=com.playdogsoft.tastyville&pli=1"
+      aria-label="Go to Google Play"
+      target="_blank"
+      class="google-link btnPosition"
+    >
       <div class="google-button">
         <svg class="icon-play-store" width="24" height="24">
-          <use href="/Delish_Match/assets/icons-e5943373.svg#icon-play-store"></use>
+          <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-play-store"></use>
         </svg>
         <div class="text-svg-container">
           <svg width="50" height="12" class="icon-get-it-on">
-            <use href="/Delish_Match/assets/icons-e5943373.svg#icon-GET-IT-ON"></use>
+            <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-GET-IT-ON"></use>
           </svg>
           <svg width="74" height="15" class="icon-google-play">
-            <use href="/Delish_Match/assets/icons-e5943373.svg#icon-google-play"></use>
+            <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-google-play"></use>
           </svg>
         </div>
       </div>
     </a>
   </div>
 </section>
+
     </main>
     <footer class="footer">
   <div class="container">

@@ -1,17 +1,35 @@
 .reviews-section {
   padding-bottom: 24px;
-  background-image: url('/img/bg-images/border_desc_@1x.webp'),
-    url('/img/bg-images/border_desc_@1x.webp');
-  background-size: auto 15px;
-  background-position: left 54px, left calc(100% - 50px);
-  background-repeat: repeat-x;
 
   @include media(desktop) {
     padding-bottom: 70px;
-    background-image: url('/img/bg-images/border_desc_@1x.webp'),
-      url('/img/bg-images/border_desc_@1x.webp');
+  }
+}
+
+.reviews-container {
+  background-image: image-set(
+      url('../img/bg-images/border_desc_@1x.webp') 1x,
+      url('../img/bg-images/border_desc_@2x.webp') 2x
+    ),
+    image-set(
+      url('../img/bg-images/border_desc_@1x.webp') 1x,
+      url('../img/bg-images/border_desc_@2x.webp') 2x
+    );
+  background-size: auto 15px;
+  background-position: left 54px, left calc(100% - 27px);
+  background-repeat: repeat-x;
+
+  @include media(desktop) {
+    background-image: image-set(
+        url('../img/bg-images/border_desc_@1x.webp') 1x,
+        url('../img/bg-images/border_desc_@2x.webp') 2x
+      ),
+      image-set(
+        url('../img/bg-images/border_desc_@1x.webp') 1x,
+        url('../img/bg-images/border_desc_@2x.webp') 2x
+      );
     background-size: auto 30px;
-    background-position: left 156px, left calc(100% - 130px);
+    background-position: left 156px, left calc(100% - 60px);
     background-repeat: repeat-x;
   }
 }

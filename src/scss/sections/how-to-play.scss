@@ -1,0 +1,76 @@
+.how-to-play-container {
+  padding-bottom: 24px;
+
+  @include media(desktop) {
+    padding-bottom: 70px;
+  }
+}
+
+.how-to-play-title {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.how-to-play-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    gap: 48px;
+  }
+}
+
+.how-to-play-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: center;
+    gap: 46px;
+  }
+}
+
+.htp-text-wrapper {
+  border-radius: 17px;
+  padding: 16px;
+  width: 288px;
+  background: $_text_bg_color;
+
+  @include media(desktop) {
+    border-radius: 20px;
+    padding: 24px;
+    width: 426px;
+    height: 258px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.htp-text {
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.htp-img {
+  width: 288px;
+  height: 160px;
+
+  @include media(desktop) {
+    width: 568px;
+    height: 320px;
+  }
+}
+
+.how-to-play-item.reverse {
+  @include media(desktop) {
+    flex-direction: row-reverse;
+  }
+}

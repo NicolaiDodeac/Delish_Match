@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import { reviewsImages } from './reviews-images';
-import icons from '../img/icons.svg';
+import icons from '../img/sprite.svg';
 
 const refs = {
   reviewsListEl: document.querySelector('.reviews-list'),

@@ -38,15 +38,7 @@
   }
 }
 
-.swiperArrows {
-  display: flex;
-  max-width: fit-content;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  border: 2px solid #eecf48;
-  border-radius: 25%;
-  margin: 0 auto;
+.swiper-btn-gallery {
   margin-bottom: 24px;
 }
 
@@ -71,7 +63,6 @@
     height: 30px;
     background-size: auto 30px;
     margin: 16px 0;
-    // width: 100vw;
   }
 }
 

@@ -1,0 +1,24 @@
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.features-text {
+  width: 288px;
+  border-radius: 20px;
+  padding: 16px;
+  background: $_text_bg_color;
+  @include media(desktop) {
+    font-size: 20px;
+    padding: 24px;
+    width: 730px;
+    margin: 0 auto;
+  }
+}
+.featuresImg3 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}

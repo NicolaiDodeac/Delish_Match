@@ -1,5 +1,6 @@
 .how-to-play-container {
   padding-bottom: 24px;
+  position: relative;
 
   @include media(desktop) {
     padding-bottom: 70px;
@@ -72,5 +73,22 @@
 .how-to-play-item.reverse {
   @include media(desktop) {
     flex-direction: row-reverse;
+  }
+}
+
+.instr-yellow-image {
+  width: 29px;
+  height: 69px;
+  position: absolute;
+  top: -2px;
+  right: 34px;
+  z-index: 2;
+  transform: rotate(110deg) scaleX(-1);
+  @include media(desktop) {
+    width: 58px;
+    height: 138px;
+    top: 119px;
+    right: 95px;
+    transform: rotate(126deg) scaleX(-1);
   }
 }

@@ -1,0 +1,89 @@
+.privacy-section {
+  background-color: $_white_accent_color;
+  padding-top: 10px;
+  padding-bottom: 24px;
+
+  @include media(desktop) {
+    padding-top: 90px;
+    padding-bottom: 88px;
+  }
+}
+
+.home-link {
+  font-weight: 700;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+  @include media(desktop) {
+    font-size: 24px;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.privacy-icon {
+  width: 14px;
+  height: 14px;
+  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+
+  @include media(desktop) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.home-link:hover,
+.home-link:focus {
+  color: $_nav_color_hover;
+}
+
+.home-link:hover .privacy-icon,
+.home-link:focus .privacy-icon {
+  stroke: $_nav_color_hover;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 36px;
+    margin-bottom: 48px;
+  }
+}
+
+.privacy-text {
+  font-size: 14px;
+  line-height: 2;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.privacy-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.privacy-item-list {
+  padding-left: 20px;
+
+  @include media(desktop) {
+    padding-left: 30px;
+  }
+}
+
+.privacy-item-list-item {
+  list-style-type: disc;
+}

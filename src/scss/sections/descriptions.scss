@@ -1,5 +1,4 @@
 .description-section {
-  position: relative;
   width: 100%;
   padding-top: 39px;
   padding-bottom: 24px;
@@ -16,6 +15,10 @@
     background-position: left top;
     background-repeat: repeat-x;
   }
+}
+
+.description-container {
+  position: relative;
 }
 
 .desc-title-container {
@@ -102,7 +105,7 @@
   @include media(desktop) {
     display: block;
     position: absolute;
-    bottom: 17px;
+    bottom: -17px;
     right: 153px;
     z-index: 2;
   }

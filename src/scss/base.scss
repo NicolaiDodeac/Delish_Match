@@ -117,3 +117,58 @@
 .google-link:focus .text-svg-container svg {
   fill: $_white_accent_color;
 }
+
+.swiper-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border: 0.25px solid #eecf48;
+  border-radius: 10px;
+  width: 36px;
+  height: 18px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    border-radius: 20px;
+    width: 72px;
+    height: 36px;
+  }
+}
+
+.reviews-swiper-icon {
+  width: 10px;
+  height: 10px;
+  fill: #eecf48;
+
+  @include media(desktop) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.btn-prev {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-next {
+  transform: scaleX(-1);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-prev:hover,
+.btn-prev:focus,
+.btn-next:hover,
+.btn-next:focus {
+  stroke: $_main_color;
+}

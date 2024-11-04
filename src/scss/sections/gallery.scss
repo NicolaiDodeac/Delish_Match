@@ -16,12 +16,12 @@
 .gallery-container {
   @include media(desktop) {
     background-image: image-set(
-        url('../img/bg-images/green_desc_@1x.webp') 1x,
-        url('../img/bg-images/green_desc_@2x.webp') 2x
+        url('../img/bg-images/green_@1x.webp') 1x,
+        url('../img/bg-images/green_@2x.webp') 2x
       ),
       image-set(
-        url('../img/bg-images/red_desc_@1x.webp') 1x,
-        url('../img/bg-images/red_desc_@1x.webp') 2x
+        url('../img/bg-images/red_@1x.webp') 1x,
+        url('../img/bg-images/red_@2x.webp') 2x
       );
     background-position: top left 25%, bottom right 25%;
     background-repeat: no-repeat, no-repeat;
@@ -33,13 +33,14 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 24px;
-  @include media(desktop) {
-    margin-bottom: 70px;
-  }
 }
 
 .swiper-btn-gallery {
   margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 70px;
+    margin-top: 24px;
+  }
 }
 
 .background-stripe {
@@ -53,19 +54,19 @@
   margin: 8px 0;
   @include media(desktop) {
     background-image: image-set(
-        url('../img/bg-images/border_desc_@1x.webp') 1x,
-        url('../img/bg-images/border_desc_@2x.webp') 2x
-      )
-      image-set(
-        url('../img/bg-images/border_desc_@1x.webp') 1x,
-        url('../img/bg-images/border_desc_@2x.webp') 2x
-      );
+      url('../img/bg-images/border_desc_@1x.webp') 1x,
+      url('../img/bg-images/border_desc_@2x.webp') 2x
+    );
     height: 30px;
     background-size: auto 30px;
     margin: 16px 0;
   }
 }
-
+.btnGoogleGal {
+  @include media(desktop) {
+    margin-bottom: 70px;
+  }
+}
 .gallery-item picture {
   display: flex;
   justify-content: center;

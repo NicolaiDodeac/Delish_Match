@@ -1,20 +1,22 @@
 .hero {
   height: 100vh;
   width: 100%;
-  padding-bottom: 38px;
   background-image: linear-gradient(
-    0deg,
-    #000 0%,
-    rgba(0, 0, 0, 0.75) 48.5%,
-    rgba(0, 0, 0, 0.25) 73.39%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background-size: 100%;
-  background-position: left top;
+      0deg,
+      #000 0%,
+      rgba(0, 0, 0, 0.75) 48.5%,
+      rgba(0, 0, 0, 0.25) 73.39%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    image-set(
+      url('../img/hero/home_@1x.webp') 1x,
+      url('../img/hero/home_@2x.webp') 2x
+    );
+  background-size: 100%, auto 100%;
+  background-position: left top, 50% top;
   background-repeat: no-repeat;
 
   @include media(desktop) {
-    padding-bottom: 123px;
     background-image: linear-gradient(
         270deg,
         rgba(0, 0, 0, 0) 0%,
@@ -30,13 +32,21 @@
         rgba(0, 0, 0, 0.25) 73.39%,
         rgba(0, 0, 0, 0) 100%
       );
-    background-size: 720px 100%, 272px 100%, auto 30px;
+    background-size: 60% 100%, 44% 100%;
     background-position: left top, right top;
     background-repeat: no-repeat;
   }
 }
+
 .hero-container {
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 38px;
+
+  @include media(desktop) {
+    padding-bottom: 123px;
+  }
 }
 
 .hero-content-wrapper {
@@ -77,9 +87,16 @@
   }
 }
 
-.delish-match-img {
+.video {
+  display: none;
   @include media(desktop) {
-    width: 261px;
-    height: 234px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
   }
 }

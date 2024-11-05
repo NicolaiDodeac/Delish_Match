@@ -57,13 +57,11 @@
   justify-content: end;
   align-items: center;
   gap: 0px;
-  padding-bottom: 38px;
   @include media(desktop) {
     width: 261px;
     justify-content: end;
     align-items: center;
     gap: 32px;
-      padding-bottom: 153px;
   }
 }
 

@@ -72,8 +72,13 @@
     font-size: 20px;
   }
 }
-.nav-link {
+
+.nav-item:hover,
+.nav-item:focus  {
+  text-decoration: underline;
+  color: #eed14d;
 }
+
 .privacySlash {
   @include media(desktop) {
     display: none;

@@ -8,22 +8,25 @@
 
 .faqPictures {
   position: relative;
+  overflow: hidden;
 }
 
 .faqLadyImg {
   object-fit: contain;
   object-position: center;
   position: absolute;
-  top: 6%;
-  left: -5%;
+  top: 50px;
+  left: -11px;
   width: 150px;
   height: 180px;
   z-index: 0;
+  // object-fit: cover;
   @include media(desktop) {
+    // transform: scaleX(-1);
     top: unset;
     left: unset;
-    right: -12%;
-    bottom: -16%;
+    right: -130px;
+    bottom: -70px;
     z-index: 2;
     width: 294px;
     height: 360px;

@@ -87,3 +87,12 @@
 .privacy-item-list-item {
   list-style-type: disc;
 }
+
+.privacy-link {
+  color: $_nav_color_hover;
+  font-weight: 500;
+}
+
+.privacy-link:hover, .privacy-link:focus{
+  text-decoration: underline;
+}

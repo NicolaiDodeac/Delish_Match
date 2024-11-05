@@ -1,10 +1,13 @@
-.how-to-play-container {
-  padding-bottom: 24px;
-  position: relative;
+.how-to-play-section{
+padding-bottom: 24px;
 
   @include media(desktop) {
     padding-bottom: 70px;
   }
+}
+
+.how-to-play-container {
+  position: relative;
 }
 
 .how-to-play-title {

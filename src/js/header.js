@@ -54,7 +54,7 @@ function activateLink(targetId) {
 
 const observerOptions = {
   root: null,
-  threshold: 0.6,
+  threshold: 0.5,
 };
 
 const sectionObserver = new IntersectionObserver(entries => {

@@ -1,3 +1,10 @@
+.section-gallery {
+  padding-bottom: 24px;
+  @include media(desktop) {
+    padding-bottom: 70px;
+  }
+}
+
 .gallery-icon {
   fill: #eecf48;
   width: 9px;
@@ -5,72 +12,76 @@
 }
 
 .gallery-title {
-  padding-bottom: 8px;
+  margin-bottom: 39px;
   @include media(desktop) {
-    padding-bottom: 32px;
+    margin-bottom: 94px;
   }
 }
 .titleGal {
   margin-bottom: 0;
 }
 .gallery-container {
+  background-image: image-set(
+      url('../img/bg-images/border_desc_@1x.webp') 1x,
+      url('../img/bg-images/border_desc_@2x.webp') 2x
+    ),
+    image-set(
+      url('../img/bg-images/border_desc_@1x.webp') 1x,
+      url('../img/bg-images/border_desc_@2x.webp') 2x
+    );
+  background-size: auto 15px;
+  background-position: left 46px, left calc(100% - 90px);
+  background-repeat: repeat-x;
+
   @include media(desktop) {
     background-image: image-set(
-        url('../img/bg-images/green_@1x.webp') 1x,
-        url('../img/bg-images/green_@2x.webp') 2x
+        url('../img/bg-images/border_desc_@1x.webp') 1x,
+        url('../img/bg-images/border_desc_@2x.webp') 2x
       ),
       image-set(
-        url('../img/bg-images/red_@1x.webp') 1x,
-        url('../img/bg-images/red_@2x.webp') 2x
+        url('../img/bg-images/border_desc_@1x.webp') 1x,
+        url('../img/bg-images/border_desc_@2x.webp') 2x
       );
-    background-position: top left 25%, bottom right 25%;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 105px 114px, 106px 106px;
+    background-size: auto 30px;
+    background-position: left 156px, left calc(100% - 182px);
+    background-repeat: repeat-x;
   }
 }
+
 .btnPosition {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
+}
+
+.gallery-list {
+  margin-bottom: 31px;
+  @include media(desktop) {
+    margin-bottom: 70px;
+  }
 }
 
 .swiper-btn-gallery {
   margin-bottom: 24px;
   @include media(desktop) {
     margin-bottom: 70px;
-    margin-top: 24px;
   }
 }
 
-.background-stripe {
-  background-image: image-set(
-    url('../img/bg-images/border_desc_@1x.webp') 1x,
-    url('../img/bg-images/border_desc_@2x.webp') 2x
-  );
-  height: 15px;
-  background-repeat: repeat-x;
-  background-size: auto 15px;
-  margin: 8px 0;
-  @include media(desktop) {
-    background-image: image-set(
-      url('../img/bg-images/border_desc_@1x.webp') 1x,
-      url('../img/bg-images/border_desc_@2x.webp') 2x
-    );
-    height: 30px;
-    background-size: auto 30px;
-    margin: 16px 0;
-  }
-}
 .btnGoogleGal {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
   @include media(desktop) {
-    margin-bottom: 70px;
+    width: 156px;
   }
 }
+
 .gallery-item picture {
   display: flex;
   justify-content: center;
 }
+
 .galleryImg {
   border-radius: 10px;
   @include media(desktop) {

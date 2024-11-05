@@ -89,16 +89,21 @@
   }
 }
 
+.video-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  width: 600px;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+}
+
 .video {
-  display: none;
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 80px;
-    width: 600px;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-  }
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  transform: translateX(-15vw);
+  border: none;
 }

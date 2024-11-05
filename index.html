@@ -16,7 +16,7 @@
     <link rel="modulepreload" crossorigin href="/Delish_Match/assets/terms-9ff98d18.js">
     <link rel="modulepreload" crossorigin href="/Delish_Match/assets/vendor-a6504e5c.js">
     <link rel="stylesheet" href="/Delish_Match/assets/vendor-4e87ff37.css">
-    <link rel="stylesheet" href="/Delish_Match/assets/styles-686b2137.css">
+    <link rel="stylesheet" href="/Delish_Match/assets/styles-a5738f86.css">
   </head>
 
   <body>
@@ -152,9 +152,8 @@
     <video
       muted
       autoplay
-      controls
       loop
-      preload="metadata"
+      preload="auto"
       src="/Delish_Match/assets/video-f6e9c6d3.webm"
       class="video"
     ></video>
@@ -280,7 +279,7 @@
   </div>
 </section>
 
-      <section id="how-to-play" class="section-animation">
+      <section id="how-to-play" class="section-animation how-to-play-section">
   <div class="container how-to-play-container">
     <div class="title-container how-to-play-title">
       <span class="titleStroke">How to Play</span>
@@ -377,74 +376,109 @@
       <ul class="accordion-container faq-list" id="accordion-container"></ul>
     </div>
     <picture>
-      <source media="(min-width: 1200px)" srcset="/Delish_Match/assets/faq_lady_desc_@1x-4c754b5d.webp 1x, /Delish_Match/assets/faq_lady_desc_@1x-4c754b5d.webp 2x" type="image/png" />
+      <source
+        media="(min-width: 1200px)"
+        srcset="/Delish_Match/assets/faq_lady_desc_@1x-4c754b5d.webp 1x, /Delish_Match/assets/faq_lady_desc_@2x-88f507b5.webp 2x"
+        type="image/png"
+      />
 
-      <source media="(max-width: 1199px)" srcset="/Delish_Match/assets/faq_lady_mob_@1x-6431bf0c.webp 1x, /Delish_Match/assets/faq_lady_mob_@1x-6431bf0c.webp 2x" type="image/png" />
-      <img src="/Delish_Match/assets/faq_lady_desc_@1x-4c754b5d.webp" alt="lady in glasses" class="faqLadyImg" ;loading="lazy" />
+      <source
+        media="(max-width: 1199px)"
+        srcset="/Delish_Match/assets/faq_lady_mob_@1x-6431bf0c.webp 1x, /Delish_Match/assets/faq_lady_mob_@2x-af79c3d0.webp 2x"
+        type="image/png"
+      />
+      <img
+        src="/Delish_Match/assets/faq_lady_desc_@1x-4c754b5d.webp"
+        alt="lady in glasses"
+        class="faqLadyImg"
+        ;loading="lazy"
+      />
     </picture>
     <picture>
-      <source media="(max-width: 1199px)" srcset="data:image/webp;base64,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 1x, /Delish_Match/assets/faq_blue_mob@2x-7f7a0f7a.png 2x" type="image/png" />
-      <img src="data:image/webp;base64,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" alt="tetris blue" class="faqBlueImg" loading="lazy" />
+      <source
+        media="(max-width: 1199px)"
+        srcset="data:image/webp;base64,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 1x, /Delish_Match/assets/faq_blue_mob@2x-7f7a0f7a.png 2x"
+        type="image/png"
+      />
+      <img
+        src="data:image/webp;base64,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"
+        alt="tetris blue"
+        class="faqBlueImg"
+        loading="lazy"
+      />
     </picture>
   </div>
 </section>
+
       <section id="gallery" class="section-gallery section-animation">
   <div class="container gallery-container">
-    <div class="gal-wrapper">
-      <div class="title-container gallery-title">
-        <span class="titleStroke">Gallery</span>
-        <h2 class="title titleGal">Gallery</h2>
-      </div>
-
-      <div class="background-stripe"></div>
-      <div class="swiper gallery-swiper">
-        <ul class="gallery-list swiper-wrapper"></ul>
-      </div>
-      <div class="background-stripe"></div>
-      <div class="swiper-btn swiper-btn-gallery">
-        <div class="gallery-swiper-button-prev btn-prev">
-          <svg class="swiper-icon">
-            <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-left-arrow"></use>
-          </svg>
-        </div>
-        <div class="gallery-swiper-button-next btn-next">
-          <svg class="swiper-icon">
-            <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-left-arrow"></use>
-          </svg>
-        </div>
-      </div>
-      <a href="https://play.google.com/store/apps/details?id=com.playdogsoft.tastyville&pli=1"
-        aria-label="Go to Google Play" target="_blank" class="google-link btnPosition btnGoogleGal">
-        <div class="google-button">
-          <svg class="icon-play-store" width="24" height="24">
-            <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-play-store"></use>
-          </svg>
-          <div class="text-svg-container">
-            <svg width="50" height="12" class="icon-get-it-on">
-              <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-GET-IT-ON"></use>
-            </svg>
-            <svg width="74" height="15" class="icon-google-play">
-              <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-google-play"></use>
-            </svg>
-          </div>
-        </div>
-      </a>
+    <div class="title-container gallery-title">
+      <span class="titleStroke">Gallery</span>
+      <h2 class="title titleGal">Gallery</h2>
     </div>
+    <div class="swiper gallery-swiper">
+      <ul class="gallery-list swiper-wrapper"></ul>
+    </div>
+    <div class="swiper-btn swiper-btn-gallery">
+      <div class="gallery-swiper-button-prev btn-prev">
+        <svg class="swiper-icon">
+          <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-left-arrow"></use>
+        </svg>
+      </div>
+      <div class="gallery-swiper-button-next btn-next">
+        <svg class="swiper-icon">
+          <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-left-arrow"></use>
+        </svg>
+      </div>
+    </div>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.playdogsoft.tastyville&pli=1"
+      aria-label="Go to Google Play"
+      target="_blank"
+      class="google-link btnGoogleGal"
+    >
+      <div class="google-button">
+        <svg class="icon-play-store" width="24" height="24">
+          <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-play-store"></use>
+        </svg>
+        <div class="text-svg-container">
+          <svg width="50" height="12" class="icon-get-it-on">
+            <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-GET-IT-ON"></use>
+          </svg>
+          <svg width="74" height="15" class="icon-google-play">
+            <use href="/Delish_Match/assets/sprite-e5943373.svg#icon-google-play"></use>
+          </svg>
+        </div>
+      </div>
+    </a>
   </div>
 </section>
+
     </main>
-    <footer id="footer" class="footer section-animation">
+    <footer id="footer" class="footer">
   <div class="container">
     <nav class="nav">
       <div class="footerWrapper">
-        <img class="img-footer" srcset="/Delish_Match/assets/delish_match_desc_@1x-56361b97.webp 1x, /Delish_Match/assets/delish_match_desc_@2x-9e117120.webp 2x" src="/Delish_Match/assets/delish_match_desc_@1x-56361b97.webp" alt="delish match logo" width="98" height="88" loading="lazy" />
+        <img
+          class="img-footer"
+          srcset="/Delish_Match/assets/delish_match_desc_@1x-56361b97.webp 1x, /Delish_Match/assets/delish_match_desc_@2x-9e117120.webp 2x"
+          src="/Delish_Match/assets/delish_match_desc_@1x-56361b97.webp"
+          alt="delish match logo"
+          width="98"
+          height="88"
+          loading="lazy"
+        />
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="./privacy-policy.html" class="nav-link">Privacy Policy<span class="privacySlash">/</span></a>
+            <a href="./privacy-policy.html" class="nav-link"
+              >Privacy Policy<span class="privacySlash">/</span></a
+            >
           </li>
 
           <li class="nav-item">
-            <a href="./terms-of-service.html" class="nav-link">Terms of Service</a>
+            <a href="./terms-of-service.html" class="nav-link"
+              >Terms of Service</a
+            >
           </li>
         </ul>
       </div>
@@ -454,6 +488,7 @@
     </nav>
   </div>
 </footer>
+
 
     
   </body>

@@ -88,3 +88,33 @@
     border-radius: 20px;
   }
 }
+
+.galery-img-container{
+ position: relative;
+}
+
+.gallery-green-image {
+ display: none;
+
+  @include media(desktop) {
+    position: absolute;
+    display: block;
+    width: 105px;
+    height: 114px;
+    top: -710px;
+    left: 110px;
+    transform: rotate(70deg) scaleX(-1);
+  }
+}
+
+.gallery-red-image {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    right: 144px;
+    z-index: 2;
+  }
+}

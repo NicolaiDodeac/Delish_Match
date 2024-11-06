@@ -197,19 +197,19 @@ body {
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: $_main_bg_color;
+    background-color: #89264c;
     border-radius: 6px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: $_main_bg_color;
+    background-color: #89264c;
   }
 
   ::-webkit-scrollbar-track {
-    background-color: $_main_bg_color;
+    background-color: #89264c;
     border-radius: 6px;
   }
 
   scrollbar-width: thin;
-  scrollbar-color: $_main_bg_color transparent;
+  scrollbar-color: #89264c transparent;
 }

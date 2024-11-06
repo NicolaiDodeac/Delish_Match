@@ -23,4 +23,4 @@ licensed under the MIT License. See the LICENSE file for details.
 
 Contact For any questions or inquiries, please reach out to:
 
-Nicolai: MykolaDodiak@gmail.com GitHub: NicolaiDodeac
+Nicolai: Mykola.Dodiak@gmail.com GitHub: NicolaiDodeac

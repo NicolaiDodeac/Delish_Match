@@ -1,26 +1,23 @@
-Delish Match: Match3 & Design
+## Delish Match : Match3 & Design Landing Page
 
-git clone https://github.com/NicolaiDodeac/Delish_Match.git Navigate to the
-project directory:
+---
 
-cd Delish_Match Install the dependencies:
+**Landing page for Delish Match: Match3 & Design** introduces a culinary
+simulator game where players can become the head chef of their own restaurant.
+It features an overview of gameplay, player reviews, and the unique perks of the
+game. Players can explore game mechanics, find answers to frequently asked
+questions, and discover the challenges awaiting them as they work to build the
+best restaurant in town!
 
-npm install Start the development server:
+---
 
-Contributing Contributions are welcome! If you have suggestions for improvements
-or new features, feel free to open an issue or submit a pull request.
+#### Project Contributors
 
-Fork the repository. Create a new branch for your feature:
+- [Nicolai Dodeac][1] - Developer
+- [Anna Vasylenko][2] - Developer
+- Olha Maevskaja - UX/UI Designer
 
-git checkout -b feature/YourFeature
+[2]: https://github.com/anna-vasylenko 'Anna Vasylenko'
+[1]: https://github.com/NicolaiDodeac 'Nicolai Dodeac'
 
-Commit your changes:
-
-git commit -m "Add your feature description" Push to the branch:
-
-git push origin feature/YourFeature Open a pull request. License This project is
-licensed under the MIT License. See the LICENSE file for details.
-
-Contact For any questions or inquiries, please reach out to:
-
-Nicolai: Mykola.Dodiak@gmail.com GitHub: NicolaiDodeac
+---

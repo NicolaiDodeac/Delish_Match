@@ -6,6 +6,7 @@ const refs = {
   links: document.querySelectorAll('.header-nav-link'),
   navItems: document.querySelectorAll('.header-nav-item'),
 };
+
 let lastScrollPosition = 0;
 
 const openMenu = () => {
@@ -69,13 +70,3 @@ const sectionObserver = new IntersectionObserver(entries => {
 document
   .querySelectorAll('section')
   .forEach(section => sectionObserver.observe(section));
-
-window.addEventListener('scroll', () => {
-  const scrollTop = window.scrollY;
-  if (scrollTop > lastScrollPosition) {
-    refs.header.classList.add('header-hidden');
-  } else {
-    refs.header.classList.remove('header-hidden');
-  }
-  lastScrollPosition = scrollTop;
-});

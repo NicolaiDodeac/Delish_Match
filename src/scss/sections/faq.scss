@@ -1,3 +1,11 @@
+.faq {
+  padding-top: 44px;
+
+  @include media(desktop) {
+    padding-top: 70px;
+  }
+}
+
 .faq-title {
   margin-bottom: 170px;
   margin-top: 8px;
@@ -28,8 +36,8 @@
     z-index: 2;
     width: 294px;
     height: 360px;
-transition: transform 0.3s ease;
-    }
+    transition: transform 0.3s ease;
+  }
 }
 
 .faqBlueImg {
@@ -52,10 +60,8 @@ transition: transform 0.3s ease;
   padding: 16px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   color: $_main_color;
-  margin-bottom: 24px;
   @include media(desktop) {
     padding: 24px;
-    margin-bottom: 70px;
   }
 }
 

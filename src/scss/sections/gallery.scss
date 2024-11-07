@@ -1,7 +1,9 @@
 .section-gallery {
   padding-bottom: 24px;
+  padding-top: 44px;
   @include media(desktop) {
     padding-bottom: 70px;
+    padding-top: 70px;
   }
 }
 
@@ -89,12 +91,12 @@
   }
 }
 
-.galery-img-container{
- position: relative;
+.galery-img-container {
+  position: relative;
 }
 
 .gallery-green-image {
- display: none;
+  display: none;
 
   @include media(desktop) {
     position: absolute;

@@ -31,7 +31,7 @@
     padding: 24px;
     width: 730px;
     margin-left: 348px;
-    margin-bottom: 513px;
+    margin-bottom: 513px - 70px;
   }
 }
 
@@ -49,6 +49,7 @@
   display: none;
   position: absolute;
   @include media(desktop) {
+    height: 127px;
     display: block;
     position: absolute;
     left: 75px;
@@ -64,7 +65,7 @@
     display: block;
     position: absolute;
     right: 0px;
-    bottom: 90px;
+    bottom: 0px;
     z-index: 0;
   }
 }

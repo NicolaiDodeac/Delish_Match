@@ -1,3 +1,11 @@
+.features-section {
+  padding-top: 44px;
+
+  @include media(desktop) {
+    padding-top: 70px;
+  }
+}
+
 .feature-title {
   margin-bottom: 138px;
   @include media(desktop) {

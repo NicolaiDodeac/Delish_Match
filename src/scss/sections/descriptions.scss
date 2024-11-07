@@ -1,7 +1,6 @@
 .description-section {
   width: 100%;
-  padding-top: 39px;
-  padding-bottom: 24px;
+  padding-top: 44px;
   background-image: url('/img/bg-images/border_desc_@1x.webp');
   background-size: auto 15px;
   background-position: left top;
@@ -9,7 +8,6 @@
 
   @include media(desktop) {
     padding-top: 100px;
-    padding-bottom: 70px;
     background-image: url('/img/bg-images/border_desc_@1x.webp');
     background-size: auto 30px;
     background-position: left top;
